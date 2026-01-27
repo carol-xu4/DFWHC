@@ -40,8 +40,115 @@ ggsave("results/gender.png",
 substance_counts = dfwhc1 %>%
     count(month_year, substance) %>%
     arrange(month_year, desc(n))
-
 write_csv(substance_counts, "results/substance_counts.csv")
 
-ggsave("results/substance_trends.png",
-       width = 14, height = 9)
+substance_counts = substance_counts %>%
+  mutate(
+    month = as.Date(paste0(month_year, "01"), format = "%Y%m%d"))
+
+opioids = c("opium","heroin","other opioids","methadone","synthetic narcotics","other narcotics")
+stimulants = c("psychostimulants","cocaine")
+sedatives = c("benzodiazepines","barbiturates","antidepressants","antipsychotics/neuroleptics","other psychotropics")
+other_drugs = c("cannabis","hallucinogens","other psychodysleptics","inhalants/solvents")
+
+# opioids
+ggplot(substance_counts %>%
+    filter(substance %in% opioids),
+    aes(x = month, y = n, color = substance)) +
+    geom_line(linewidth = 1.3) +
+    geom_point(size = 2) +
+    labs(title = "Opioid-Related Encounters (DFW, 2023–2025)",
+         x = "Year",
+         y = "Count") +
+    scale_x_date(
+      date_breaks = "1 year",
+      date_labels = "%Y"
+    ) +
+    theme_stata() +
+    theme(
+      plot.title = element_text(size = 35, face = "bold"),
+      axis.title  = element_text(size = 25, face = "bold"),
+      axis.text   = element_text(size = 20),
+      plot.background = element_rect(fill = "white"),
+      legend.title = element_text(size = 18),
+      legend.text  = element_text(size = 16)
+    )
+ggsave("results/opioid_trends.png",
+    width = 12, height = 8)
+
+# stimulants
+ggplot(substance_counts %>%
+    filter(substance %in% stimulants),
+    aes(x = month, y = n, color = substance)) +
+    geom_line(linewidth = 1.3) +
+    geom_point(size = 2) +
+    labs(title = "Stimulant-Related Encounters (DFW, 2023–2025)",
+         x = "Year",
+         y = "Count") +
+    scale_x_date(
+      date_breaks = "1 year",
+      date_labels = "%Y"
+    ) +
+    theme_stata() +
+    theme(
+      plot.title = element_text(size = 35, face = "bold"),
+      axis.title  = element_text(size = 25, face = "bold"),
+      axis.text   = element_text(size = 20),
+      plot.background = element_rect(fill = "white"),
+      legend.title = element_text(size = 18),
+      legend.text  = element_text(size = 16)
+    )
+ggsave("results/stimulant_trends.png",
+    width = 12, height = 8)
+
+# sedatives
+ggplot(substance_counts %>%
+    filter(substance %in% sedatives),
+    aes(x = month, y = n, color = substance)) +
+    geom_line(linewidth = 1.3) +
+    geom_point(size = 2) +
+    labs(title = "Sedative-Related Encounters (DFW, 2023–2025)",
+         x = "Year",
+         y = "Count") +
+    scale_x_date(
+      date_breaks = "1 year",
+      date_labels = "%Y"
+    ) +
+    theme_stata() +
+    theme(
+      plot.title = element_text(size = 35, face = "bold"),
+      axis.title  = element_text(size = 25, face = "bold"),
+      axis.text   = element_text(size = 20),
+      plot.background = element_rect(fill = "white"),
+      legend.title = element_text(size = 18),
+      legend.text  = element_text(size = 16)
+    )
+ggsave("results/sedative_trends.png",
+    width = 12, height = 8)
+
+# other drugs
+ggplot(substance_counts %>%
+    filter(substance %in% other_drugs),
+    aes(x = month, y = n, color = substance)) +
+    geom_line(linewidth = 1.3) +
+    geom_point(size = 2) +
+    labs(title = "Other Drug-Related Encounters (DFW, 2023–2025)",
+         x = "Year",
+         y = "Count") +
+    scale_x_date(
+      date_breaks = "1 year",
+      date_labels = "%Y"
+    ) +
+    theme_stata() +
+    theme(
+      plot.title = element_text(size = 35, face = "bold"),
+      axis.title  = element_text(size = 25, face = "bold"),
+      axis.text   = element_text(size = 20),
+      plot.background = element_rect(fill = "white"),
+      legend.title = element_text(size = 18),
+      legend.text  = element_text(size = 16)
+    )
+ggsave("results/other_drug_trends.png",
+    width = 12, height = 8)
+
+# aggregated groups
