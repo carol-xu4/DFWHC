@@ -75,7 +75,23 @@ See "DFWHC/results" folder for full monthly substance use encounter counts by su
 ![](jps_substances.png)
 
 ## Payer Trends
+![](payer_group.png)
 
+::: {.columns}
+
+::: {.column width="33%"}
+![](payers2023.png)
+:::
+
+::: {.column width="33%"}
+![](payers2024.png)
+:::
+
+::: {.column width="33%"}
+![](payers2025.png)
+:::
+
+:::
 
 ## Appendix
 #### ICD-10 Codes by Substance

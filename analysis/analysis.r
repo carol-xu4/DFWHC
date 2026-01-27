@@ -250,7 +250,7 @@ ggplot(jps_monthly,
        aes(x = month, y = n, color = substance)) +
   geom_line(linewidth = 1.3) +
   geom_point(size = 2) +
-  labs(title = "JPS Hospital: Substance-Related Encounters by Month (2023–2025)",
+  labs(title = "JPS Hospital: Substance-Related Encounters by Month",
        x = "Year",
        y = "Count") +
   scale_x_date(
@@ -267,3 +267,156 @@ ggplot(jps_monthly,
     legend.text  = element_text(size = 14)
   )
 ggsave("results/jps_substances.png", width = 14, height = 9)
+
+# Payer trends
+payer_group_counts = dfwhc1 %>%
+    count(payer_group) %>%
+    mutate(prop = n / sum(n),
+    pct_label = paste0(round(prop*100, 1), "%"))    
+
+ggplot(payer_group_counts, aes(x = "", y = n, fill = payer_group)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = pct_label),
+    position = position_stack(vjust = 0.5),
+    color = "white", size = 8, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Insured" = "dodgerblue2",
+      "MC Advantage" = "magenta",
+      "Medicaid" = "paleturquoise4",
+      "Medicare" = "tomato",
+      "Uninsured" = "lightpink"),
+    name = "Payer type" ) +
+  labs(title = "Payer Type Distribution (DFW 2023-2025)",
+    x = NULL, y = NULL) +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 35, face = "bold"),
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14)) +
+  scale_y_continuous(expand = c(0, 0), labels = NULL, breaks = NULL)
+ggsave("results/payer_group.png",
+    width = 12, height = 8)
+
+# payer types by year
+payers2023 = dfwhc1 %>%
+    filter(year==2023) %>%
+    count(payer_group) %>%
+    mutate(prop = n / sum(n),
+    pct_label = paste0(round(prop*100, 1), "%"))
+
+ggplot(payers2023, aes(x = "", y = n, fill = payer_group)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = pct_label),
+    position = position_stack(vjust = 0.5),
+    color = "white", size = 8, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Insured" = "dodgerblue2",
+      "MC Advantage" = "magenta",
+      "Medicaid" = "paleturquoise4",
+      "Medicare" = "tomato",
+      "Uninsured" = "lightpink"),
+    name = "Payer type" ) +
+  labs(title = "2023 Payer Type Distribution",
+    x = NULL, y = NULL) +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 35, face = "bold"),
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14)) +
+  scale_y_continuous(expand = c(0, 0), labels = NULL, breaks = NULL)
+ggsave("results/payers2023.png",
+    width = 12, height = 8)
+
+payers2024 = dfwhc1 %>%
+    filter(year==2024) %>%
+    count(payer_group) %>%
+    mutate(prop = n / sum(n),
+    pct_label = paste0(round(prop*100, 1), "%"))
+
+ggplot(payers2024, aes(x = "", y = n, fill = payer_group)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = pct_label),
+    position = position_stack(vjust = 0.5),
+    color = "white", size = 8, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Insured" = "dodgerblue2",
+      "MC Advantage" = "magenta",
+      "Medicaid" = "paleturquoise4",
+      "Medicare" = "tomato",
+      "Uninsured" = "lightpink"),
+    name = "Payer type" ) +
+  labs(title = "2024 Payer Type Distribution",
+    x = NULL, y = NULL) +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 35, face = "bold"),
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14)) +
+  scale_y_continuous(expand = c(0, 0), labels = NULL, breaks = NULL)
+ggsave("results/payers2024.png",
+    width = 12, height = 8)
+
+payers2025 = dfwhc1 %>%
+    filter(year==2025) %>%
+    count(payer_group) %>%
+    mutate(prop = n / sum(n),
+    pct_label = paste0(round(prop*100, 1), "%"))
+
+ggplot(payers2025, aes(x = "", y = n, fill = payer_group)) +
+  geom_bar(stat = "identity", width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = pct_label),
+    position = position_stack(vjust = 0.5),
+    color = "white", size = 8, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Insured" = "dodgerblue2",
+      "MC Advantage" = "magenta",
+      "Medicaid" = "paleturquoise4",
+      "Medicare" = "tomato",
+      "Uninsured" = "lightpink"),
+    name = "Payer type" ) +
+  labs(title = "2025 Payer Type Distribution",
+    x = NULL, y = NULL) +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 35, face = "bold"),
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14)) +
+  scale_y_continuous(expand = c(0, 0), labels = NULL, breaks = NULL)
+ggsave("results/payers2025.png",
+    width = 12, height = 8)
