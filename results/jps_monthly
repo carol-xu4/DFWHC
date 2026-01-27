@@ -1,0 +1,350 @@
+year,month,substance,n
+2023,2023-01-01,alcohol,24
+2023,2023-01-01,antidepressants,6
+2023,2023-01-01,antipsychotics/neuroleptics,2
+2023,2023-01-01,benzodiazepines,5
+2023,2023-01-01,cannabis,1
+2023,2023-01-01,cocaine,6
+2023,2023-01-01,heroin,1
+2023,2023-01-01,other narcotics,3
+2023,2023-01-01,other opioids,4
+2023,2023-01-01,psychostimulants,1
+2023,2023-01-01,synthetic narcotics,5
+2023,2023-02-01,alcohol,20
+2023,2023-02-01,antidepressants,2
+2023,2023-02-01,antipsychotics/neuroleptics,3
+2023,2023-02-01,benzodiazepines,1
+2023,2023-02-01,cocaine,11
+2023,2023-02-01,heroin,2
+2023,2023-02-01,other opioids,5
+2023,2023-02-01,psychostimulants,3
+2023,2023-02-01,synthetic narcotics,2
+2023,2023-03-01,alcohol,23
+2023,2023-03-01,antidepressants,1
+2023,2023-03-01,antipsychotics/neuroleptics,2
+2023,2023-03-01,benzodiazepines,4
+2023,2023-03-01,cannabis,1
+2023,2023-03-01,cocaine,12
+2023,2023-03-01,heroin,3
+2023,2023-03-01,other narcotics,5
+2023,2023-03-01,other opioids,11
+2023,2023-03-01,other psychotropics,1
+2023,2023-03-01,psychostimulants,3
+2023,2023-03-01,synthetic narcotics,2
+2023,2023-04-01,alcohol,22
+2023,2023-04-01,antidepressants,8
+2023,2023-04-01,antipsychotics/neuroleptics,1
+2023,2023-04-01,benzodiazepines,1
+2023,2023-04-01,cannabis,1
+2023,2023-04-01,cocaine,11
+2023,2023-04-01,heroin,2
+2023,2023-04-01,other narcotics,3
+2023,2023-04-01,other opioids,5
+2023,2023-04-01,psychostimulants,3
+2023,2023-04-01,synthetic narcotics,4
+2023,2023-05-01,alcohol,22
+2023,2023-05-01,antidepressants,2
+2023,2023-05-01,antipsychotics/neuroleptics,5
+2023,2023-05-01,benzodiazepines,6
+2023,2023-05-01,cannabis,3
+2023,2023-05-01,cocaine,8
+2023,2023-05-01,heroin,2
+2023,2023-05-01,other narcotics,5
+2023,2023-05-01,other opioids,6
+2023,2023-05-01,psychostimulants,1
+2023,2023-05-01,synthetic narcotics,6
+2023,2023-06-01,alcohol,23
+2023,2023-06-01,antidepressants,3
+2023,2023-06-01,antipsychotics/neuroleptics,1
+2023,2023-06-01,benzodiazepines,6
+2023,2023-06-01,cannabis,3
+2023,2023-06-01,cocaine,19
+2023,2023-06-01,heroin,3
+2023,2023-06-01,other narcotics,6
+2023,2023-06-01,other opioids,5
+2023,2023-06-01,synthetic narcotics,3
+2023,2023-07-01,alcohol,25
+2023,2023-07-01,antidepressants,4
+2023,2023-07-01,antipsychotics/neuroleptics,5
+2023,2023-07-01,benzodiazepines,4
+2023,2023-07-01,cannabis,3
+2023,2023-07-01,cocaine,23
+2023,2023-07-01,heroin,5
+2023,2023-07-01,inhalants/solvents,1
+2023,2023-07-01,other narcotics,3
+2023,2023-07-01,other opioids,14
+2023,2023-07-01,other psychodysleptics,1
+2023,2023-07-01,synthetic narcotics,2
+2023,2023-08-01,alcohol,26
+2023,2023-08-01,antidepressants,7
+2023,2023-08-01,antipsychotics/neuroleptics,3
+2023,2023-08-01,benzodiazepines,1
+2023,2023-08-01,cannabis,3
+2023,2023-08-01,cocaine,20
+2023,2023-08-01,heroin,3
+2023,2023-08-01,inhalants/solvents,1
+2023,2023-08-01,other narcotics,4
+2023,2023-08-01,other opioids,6
+2023,2023-08-01,psychostimulants,1
+2023,2023-08-01,synthetic narcotics,2
+2023,2023-09-01,alcohol,39
+2023,2023-09-01,antidepressants,9
+2023,2023-09-01,antipsychotics/neuroleptics,1
+2023,2023-09-01,cannabis,2
+2023,2023-09-01,cocaine,16
+2023,2023-09-01,heroin,1
+2023,2023-09-01,other narcotics,2
+2023,2023-09-01,other opioids,11
+2023,2023-09-01,synthetic narcotics,1
+2023,2023-10-01,alcohol,24
+2023,2023-10-01,antidepressants,4
+2023,2023-10-01,antipsychotics/neuroleptics,6
+2023,2023-10-01,benzodiazepines,3
+2023,2023-10-01,cannabis,2
+2023,2023-10-01,cocaine,24
+2023,2023-10-01,heroin,1
+2023,2023-10-01,other narcotics,6
+2023,2023-10-01,other opioids,10
+2023,2023-10-01,other psychotropics,1
+2023,2023-10-01,synthetic narcotics,2
+2023,2023-11-01,alcohol,23
+2023,2023-11-01,antidepressants,3
+2023,2023-11-01,antipsychotics/neuroleptics,2
+2023,2023-11-01,cannabis,2
+2023,2023-11-01,cocaine,12
+2023,2023-11-01,heroin,1
+2023,2023-11-01,other narcotics,2
+2023,2023-11-01,other opioids,5
+2023,2023-11-01,psychostimulants,1
+2023,2023-11-01,synthetic narcotics,1
+2023,2023-12-01,alcohol,24
+2023,2023-12-01,antidepressants,3
+2023,2023-12-01,antipsychotics/neuroleptics,5
+2023,2023-12-01,benzodiazepines,1
+2023,2023-12-01,cannabis,2
+2023,2023-12-01,cocaine,13
+2023,2023-12-01,heroin,1
+2023,2023-12-01,other narcotics,1
+2023,2023-12-01,other opioids,8
+2023,2023-12-01,other psychodysleptics,1
+2023,2023-12-01,psychostimulants,3
+2023,2023-12-01,synthetic narcotics,3
+2024,2024-01-01,alcohol,23
+2024,2024-01-01,antidepressants,4
+2024,2024-01-01,antipsychotics/neuroleptics,5
+2024,2024-01-01,benzodiazepines,5
+2024,2024-01-01,cannabis,5
+2024,2024-01-01,cocaine,15
+2024,2024-01-01,hallucinogens,1
+2024,2024-01-01,other narcotics,2
+2024,2024-01-01,other opioids,8
+2024,2024-01-01,synthetic narcotics,2
+2024,2024-02-01,alcohol,21
+2024,2024-02-01,antidepressants,10
+2024,2024-02-01,antipsychotics/neuroleptics,5
+2024,2024-02-01,benzodiazepines,5
+2024,2024-02-01,cannabis,2
+2024,2024-02-01,cocaine,11
+2024,2024-02-01,heroin,1
+2024,2024-02-01,other narcotics,8
+2024,2024-02-01,other opioids,3
+2024,2024-02-01,synthetic narcotics,3
+2024,2024-03-01,alcohol,26
+2024,2024-03-01,antidepressants,7
+2024,2024-03-01,antipsychotics/neuroleptics,1
+2024,2024-03-01,benzodiazepines,2
+2024,2024-03-01,cannabis,1
+2024,2024-03-01,cocaine,13
+2024,2024-03-01,hallucinogens,1
+2024,2024-03-01,heroin,1
+2024,2024-03-01,methadone,1
+2024,2024-03-01,other narcotics,1
+2024,2024-03-01,other opioids,9
+2024,2024-03-01,psychostimulants,1
+2024,2024-03-01,synthetic narcotics,3
+2024,2024-04-01,alcohol,21
+2024,2024-04-01,antidepressants,9
+2024,2024-04-01,antipsychotics/neuroleptics,4
+2024,2024-04-01,cocaine,24
+2024,2024-04-01,inhalants/solvents,1
+2024,2024-04-01,other narcotics,1
+2024,2024-04-01,other opioids,9
+2024,2024-04-01,psychostimulants,3
+2024,2024-04-01,synthetic narcotics,2
+2024,2024-05-01,alcohol,23
+2024,2024-05-01,antidepressants,6
+2024,2024-05-01,antipsychotics/neuroleptics,6
+2024,2024-05-01,benzodiazepines,1
+2024,2024-05-01,cannabis,2
+2024,2024-05-01,cocaine,12
+2024,2024-05-01,inhalants/solvents,1
+2024,2024-05-01,other narcotics,2
+2024,2024-05-01,other opioids,3
+2024,2024-05-01,psychostimulants,3
+2024,2024-05-01,synthetic narcotics,10
+2024,2024-06-01,alcohol,32
+2024,2024-06-01,antidepressants,11
+2024,2024-06-01,antipsychotics/neuroleptics,2
+2024,2024-06-01,benzodiazepines,1
+2024,2024-06-01,cannabis,2
+2024,2024-06-01,cocaine,14
+2024,2024-06-01,hallucinogens,1
+2024,2024-06-01,other narcotics,2
+2024,2024-06-01,other opioids,4
+2024,2024-06-01,other psychodysleptics,1
+2024,2024-06-01,psychostimulants,1
+2024,2024-06-01,synthetic narcotics,3
+2024,2024-07-01,alcohol,25
+2024,2024-07-01,antidepressants,5
+2024,2024-07-01,antipsychotics/neuroleptics,3
+2024,2024-07-01,benzodiazepines,4
+2024,2024-07-01,cannabis,4
+2024,2024-07-01,cocaine,15
+2024,2024-07-01,other narcotics,4
+2024,2024-07-01,other opioids,12
+2024,2024-07-01,psychostimulants,3
+2024,2024-07-01,synthetic narcotics,4
+2024,2024-08-01,alcohol,35
+2024,2024-08-01,antidepressants,5
+2024,2024-08-01,antipsychotics/neuroleptics,3
+2024,2024-08-01,benzodiazepines,1
+2024,2024-08-01,cannabis,3
+2024,2024-08-01,cocaine,15
+2024,2024-08-01,other narcotics,4
+2024,2024-08-01,other opioids,10
+2024,2024-08-01,synthetic narcotics,4
+2024,2024-09-01,alcohol,32
+2024,2024-09-01,antidepressants,5
+2024,2024-09-01,antipsychotics/neuroleptics,4
+2024,2024-09-01,benzodiazepines,4
+2024,2024-09-01,cannabis,1
+2024,2024-09-01,cocaine,8
+2024,2024-09-01,heroin,2
+2024,2024-09-01,inhalants/solvents,1
+2024,2024-09-01,other narcotics,2
+2024,2024-09-01,other opioids,5
+2024,2024-09-01,psychostimulants,1
+2024,2024-09-01,synthetic narcotics,6
+2024,2024-10-01,alcohol,31
+2024,2024-10-01,antidepressants,6
+2024,2024-10-01,antipsychotics/neuroleptics,5
+2024,2024-10-01,benzodiazepines,2
+2024,2024-10-01,cannabis,5
+2024,2024-10-01,cocaine,8
+2024,2024-10-01,inhalants/solvents,1
+2024,2024-10-01,other opioids,4
+2024,2024-10-01,synthetic narcotics,2
+2024,2024-11-01,alcohol,23
+2024,2024-11-01,antidepressants,5
+2024,2024-11-01,antipsychotics/neuroleptics,2
+2024,2024-11-01,benzodiazepines,1
+2024,2024-11-01,cocaine,14
+2024,2024-11-01,other narcotics,3
+2024,2024-11-01,other opioids,10
+2024,2024-11-01,psychostimulants,3
+2024,2024-11-01,synthetic narcotics,2
+2024,2024-12-01,alcohol,22
+2024,2024-12-01,antidepressants,3
+2024,2024-12-01,antipsychotics/neuroleptics,3
+2024,2024-12-01,benzodiazepines,7
+2024,2024-12-01,cannabis,1
+2024,2024-12-01,cocaine,8
+2024,2024-12-01,heroin,1
+2024,2024-12-01,other narcotics,3
+2024,2024-12-01,other opioids,2
+2024,2024-12-01,psychostimulants,2
+2024,2024-12-01,synthetic narcotics,3
+2025,2025-01-01,alcohol,20
+2025,2025-01-01,antidepressants,6
+2025,2025-01-01,antipsychotics/neuroleptics,3
+2025,2025-01-01,benzodiazepines,1
+2025,2025-01-01,cannabis,2
+2025,2025-01-01,cocaine,11
+2025,2025-01-01,heroin,2
+2025,2025-01-01,other opioids,4
+2025,2025-01-01,synthetic narcotics,3
+2025,2025-02-01,alcohol,23
+2025,2025-02-01,antidepressants,1
+2025,2025-02-01,antipsychotics/neuroleptics,3
+2025,2025-02-01,benzodiazepines,4
+2025,2025-02-01,cannabis,3
+2025,2025-02-01,cocaine,20
+2025,2025-02-01,other narcotics,1
+2025,2025-02-01,other opioids,3
+2025,2025-02-01,synthetic narcotics,6
+2025,2025-03-01,alcohol,27
+2025,2025-03-01,antidepressants,3
+2025,2025-03-01,antipsychotics/neuroleptics,5
+2025,2025-03-01,benzodiazepines,2
+2025,2025-03-01,cannabis,1
+2025,2025-03-01,cocaine,30
+2025,2025-03-01,other narcotics,1
+2025,2025-03-01,other opioids,9
+2025,2025-03-01,synthetic narcotics,5
+2025,2025-04-01,alcohol,21
+2025,2025-04-01,antidepressants,5
+2025,2025-04-01,antipsychotics/neuroleptics,2
+2025,2025-04-01,benzodiazepines,1
+2025,2025-04-01,cannabis,6
+2025,2025-04-01,cocaine,20
+2025,2025-04-01,heroin,1
+2025,2025-04-01,other narcotics,8
+2025,2025-04-01,other opioids,10
+2025,2025-04-01,psychostimulants,2
+2025,2025-04-01,synthetic narcotics,6
+2025,2025-05-01,alcohol,20
+2025,2025-05-01,antidepressants,2
+2025,2025-05-01,antipsychotics/neuroleptics,5
+2025,2025-05-01,benzodiazepines,1
+2025,2025-05-01,cannabis,4
+2025,2025-05-01,cocaine,14
+2025,2025-05-01,heroin,1
+2025,2025-05-01,other narcotics,10
+2025,2025-05-01,other opioids,21
+2025,2025-05-01,psychostimulants,2
+2025,2025-05-01,synthetic narcotics,16
+2025,2025-06-01,alcohol,27
+2025,2025-06-01,antidepressants,3
+2025,2025-06-01,antipsychotics/neuroleptics,2
+2025,2025-06-01,benzodiazepines,3
+2025,2025-06-01,cannabis,4
+2025,2025-06-01,cocaine,20
+2025,2025-06-01,heroin,1
+2025,2025-06-01,other narcotics,17
+2025,2025-06-01,other opioids,12
+2025,2025-06-01,psychostimulants,2
+2025,2025-06-01,synthetic narcotics,14
+2025,2025-07-01,alcohol,32
+2025,2025-07-01,antidepressants,3
+2025,2025-07-01,antipsychotics/neuroleptics,2
+2025,2025-07-01,benzodiazepines,4
+2025,2025-07-01,cannabis,3
+2025,2025-07-01,cocaine,13
+2025,2025-07-01,heroin,1
+2025,2025-07-01,other narcotics,8
+2025,2025-07-01,other opioids,3
+2025,2025-07-01,other psychotropics,1
+2025,2025-07-01,psychostimulants,1
+2025,2025-07-01,synthetic narcotics,14
+2025,2025-08-01,alcohol,23
+2025,2025-08-01,antidepressants,4
+2025,2025-08-01,antipsychotics/neuroleptics,4
+2025,2025-08-01,cannabis,4
+2025,2025-08-01,cocaine,12
+2025,2025-08-01,heroin,1
+2025,2025-08-01,other narcotics,6
+2025,2025-08-01,other opioids,10
+2025,2025-08-01,psychostimulants,2
+2025,2025-08-01,synthetic narcotics,15
+2025,2025-09-01,alcohol,29
+2025,2025-09-01,antidepressants,2
+2025,2025-09-01,antipsychotics/neuroleptics,5
+2025,2025-09-01,benzodiazepines,3
+2025,2025-09-01,cannabis,6
+2025,2025-09-01,cocaine,15
+2025,2025-09-01,heroin,1
+2025,2025-09-01,methadone,1
+2025,2025-09-01,other narcotics,6
+2025,2025-09-01,other opioids,17
+2025,2025-09-01,psychostimulants,1
+2025,2025-09-01,synthetic narcotics,17

@@ -240,11 +240,13 @@ write_csv(hospital_counts, "results/hospital_counts.csv")
 jps_substances = dfwhc1 %>%
     filter(hospital == "JPS Hosp") %>%
     count(substance, sort = TRUE)
+write_csv(jps_substances, "results/jps_substances")
 
 jps_monthly = dfwhc1 %>%
     mutate(month = as.Date(paste0(month_year, "01"), format = "%Y%m%d")) %>%
     filter(hospital == "JPS Hosp") %>%
     count(year, month, substance)
+write_csv(jps_monthly, "results/jps_monthly")
 
 ggplot(jps_monthly,
        aes(x = month, y = n, color = substance)) +
