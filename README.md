@@ -1,8 +1,11 @@
 # DFW Hospital Council Data (2023-2025) 
+Includes all of 2023  2024, and January-October 2025 (DFWHC data updates with 2 month lag)
+
 ## DATA: DFWHC Outpatient Analysis - Report Builder
 ### 01/26/2026 data pull: 
 Case level data
 n = 13,438 
+n = 12,771 after cleaning
 
 #### Variables:
 

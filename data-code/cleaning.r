@@ -134,3 +134,32 @@ dfwhc1 = dfwhc1 %>%
       TRUE ~ NA_character_
     )
   )
+
+# type casting
+dfwhc1 = dfwhc1 %>%
+    mutate(
+        icd10 = as.factor(icd10),
+        substance = as.factor(substance),
+        hospital = as.factor(hospital),
+        hosp_county= as.factor (hosp_county),
+        payer = as.factor(payer),
+        payer_group = as.factor(payer_group),
+        race = as.factor(race),
+        gender = as.factor(gender),
+        ethnicity = as.factor(ethnicity),
+        age_group = as.factor(age_group))
+
+# deleting 27 rows with NA for year and month
+sum(is.na(dfwhc1$year))
+sum(is.na(dfwhc1$month_year))
+
+dfwhc1 = dfwhc1 %>%
+    filter(!is.na(year), !is.na(month_year))
+
+dfwhc1 = dfwhc1 %>%
+    mutate(
+        year = as.integer(year), 
+        month_year = as.integer(month_year))
+
+# Rewrite final dataset
+write_csv(dfwhc1, "data/output/dfwhc1.csv")

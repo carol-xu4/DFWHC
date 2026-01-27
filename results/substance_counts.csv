@@ -1,0 +1,507 @@
+month_year,substance,n
+202301,cannabis,72
+202301,antidepressants,55
+202301,other opioids,50
+202301,benzodiazepines,39
+202301,alcohol,36
+202301,synthetic narcotics,31
+202301,other narcotics,29
+202301,cocaine,26
+202301,antipsychotics/neuroleptics,20
+202301,psychostimulants,19
+202301,heroin,16
+202301,inhalants/solvents,8
+202301,other psychodysleptics,4
+202301,other psychotropics,1
+202302,cannabis,59
+202302,antidepressants,46
+202302,other opioids,42
+202302,alcohol,34
+202302,benzodiazepines,29
+202302,antipsychotics/neuroleptics,26
+202302,synthetic narcotics,24
+202302,cocaine,23
+202302,psychostimulants,23
+202302,other narcotics,19
+202302,heroin,15
+202302,inhalants/solvents,6
+202302,methadone,2
+202302,barbiturates,1
+202302,hallucinogens,1
+202302,opium,1
+202302,other psychodysleptics,1
+202303,cannabis,59
+202303,other opioids,54
+202303,antidepressants,43
+202303,alcohol,40
+202303,other narcotics,38
+202303,cocaine,30
+202303,benzodiazepines,29
+202303,synthetic narcotics,29
+202303,antipsychotics/neuroleptics,26
+202303,heroin,23
+202303,psychostimulants,17
+202303,inhalants/solvents,11
+202303,other psychodysleptics,4
+202303,methadone,1
+202303,other psychotropics,1
+202304,cannabis,64
+202304,antidepressants,49
+202304,other opioids,46
+202304,alcohol,34
+202304,benzodiazepines,26
+202304,antipsychotics/neuroleptics,24
+202304,cocaine,23
+202304,synthetic narcotics,23
+202304,psychostimulants,22
+202304,heroin,17
+202304,other narcotics,16
+202304,other psychodysleptics,3
+202304,inhalants/solvents,2
+202304,barbiturates,1
+202304,other psychotropics,1
+202305,cannabis,59
+202305,antidepressants,43
+202305,other opioids,43
+202305,benzodiazepines,34
+202305,alcohol,31
+202305,synthetic narcotics,30
+202305,antipsychotics/neuroleptics,24
+202305,cocaine,23
+202305,heroin,20
+202305,other narcotics,20
+202305,psychostimulants,18
+202305,inhalants/solvents,7
+202305,hallucinogens,5
+202305,other psychodysleptics,2
+202305,barbiturates,1
+202305,opium,1
+202306,other opioids,60
+202306,cannabis,53
+202306,antidepressants,52
+202306,alcohol,40
+202306,benzodiazepines,35
+202306,cocaine,32
+202306,other narcotics,30
+202306,synthetic narcotics,26
+202306,psychostimulants,24
+202306,antipsychotics/neuroleptics,16
+202306,heroin,14
+202306,inhalants/solvents,7
+202306,methadone,2
+202306,other psychodysleptics,2
+202306,barbiturates,1
+202306,hallucinogens,1
+202307,cannabis,77
+202307,other opioids,63
+202307,antidepressants,55
+202307,alcohol,38
+202307,cocaine,37
+202307,antipsychotics/neuroleptics,36
+202307,other narcotics,35
+202307,synthetic narcotics,34
+202307,benzodiazepines,32
+202307,psychostimulants,19
+202307,heroin,14
+202307,inhalants/solvents,8
+202307,other psychodysleptics,4
+202307,hallucinogens,2
+202307,barbiturates,1
+202308,other opioids,59
+202308,antidepressants,52
+202308,cannabis,52
+202308,alcohol,40
+202308,benzodiazepines,40
+202308,cocaine,37
+202308,antipsychotics/neuroleptics,27
+202308,other narcotics,23
+202308,psychostimulants,22
+202308,synthetic narcotics,17
+202308,heroin,10
+202308,inhalants/solvents,9
+202308,other psychodysleptics,3
+202308,barbiturates,1
+202308,hallucinogens,1
+202308,methadone,1
+202309,other opioids,69
+202309,cannabis,66
+202309,alcohol,61
+202309,antidepressants,61
+202309,antipsychotics/neuroleptics,29
+202309,synthetic narcotics,29
+202309,benzodiazepines,28
+202309,cocaine,27
+202309,other narcotics,27
+202309,psychostimulants,15
+202309,heroin,9
+202309,inhalants/solvents,8
+202309,other psychodysleptics,4
+202309,hallucinogens,3
+202309,methadone,2
+202310,other opioids,53
+202310,antidepressants,51
+202310,alcohol,49
+202310,cannabis,44
+202310,cocaine,36
+202310,synthetic narcotics,31
+202310,antipsychotics/neuroleptics,28
+202310,benzodiazepines,22
+202310,other narcotics,20
+202310,psychostimulants,16
+202310,heroin,6
+202310,inhalants/solvents,4
+202310,other psychodysleptics,4
+202310,opium,2
+202310,barbiturates,1
+202310,methadone,1
+202310,other psychotropics,1
+202311,cannabis,67
+202311,other opioids,48
+202311,alcohol,40
+202311,antidepressants,36
+202311,synthetic narcotics,34
+202311,other narcotics,30
+202311,cocaine,27
+202311,antipsychotics/neuroleptics,19
+202311,psychostimulants,15
+202311,benzodiazepines,13
+202311,inhalants/solvents,9
+202311,heroin,8
+202311,methadone,1
+202312,cannabis,62
+202312,other opioids,53
+202312,antidepressants,52
+202312,synthetic narcotics,42
+202312,alcohol,39
+202312,antipsychotics/neuroleptics,27
+202312,cocaine,21
+202312,other narcotics,18
+202312,benzodiazepines,16
+202312,psychostimulants,14
+202312,inhalants/solvents,6
+202312,heroin,5
+202312,other psychodysleptics,2
+202312,barbiturates,1
+202312,other psychotropics,1
+202401,cannabis,59
+202401,antidepressants,46
+202401,other opioids,40
+202401,benzodiazepines,36
+202401,alcohol,35
+202401,cocaine,25
+202401,synthetic narcotics,22
+202401,other narcotics,16
+202401,antipsychotics/neuroleptics,15
+202401,psychostimulants,11
+202401,inhalants/solvents,9
+202401,barbiturates,4
+202401,heroin,4
+202401,other psychodysleptics,2
+202401,hallucinogens,1
+202402,cannabis,52
+202402,antidepressants,46
+202402,other opioids,44
+202402,alcohol,43
+202402,benzodiazepines,33
+202402,synthetic narcotics,32
+202402,cocaine,26
+202402,other narcotics,22
+202402,antipsychotics/neuroleptics,21
+202402,psychostimulants,12
+202402,heroin,11
+202402,other psychodysleptics,6
+202402,inhalants/solvents,4
+202402,methadone,2
+202403,cannabis,72
+202403,antidepressants,59
+202403,other opioids,57
+202403,alcohol,45
+202403,synthetic narcotics,35
+202403,cocaine,33
+202403,benzodiazepines,29
+202403,other narcotics,27
+202403,antipsychotics/neuroleptics,26
+202403,psychostimulants,17
+202403,heroin,8
+202403,inhalants/solvents,8
+202403,hallucinogens,1
+202403,methadone,1
+202403,other psychodysleptics,1
+202403,other psychotropics,1
+202404,cannabis,70
+202404,antidepressants,57
+202404,other opioids,51
+202404,synthetic narcotics,45
+202404,alcohol,40
+202404,cocaine,39
+202404,antipsychotics/neuroleptics,22
+202404,other narcotics,22
+202404,benzodiazepines,19
+202404,psychostimulants,18
+202404,inhalants/solvents,6
+202404,heroin,3
+202404,hallucinogens,2
+202404,methadone,2
+202404,opium,2
+202404,other psychodysleptics,1
+202405,cannabis,63
+202405,antidepressants,57
+202405,synthetic narcotics,54
+202405,other opioids,51
+202405,alcohol,44
+202405,benzodiazepines,34
+202405,antipsychotics/neuroleptics,28
+202405,psychostimulants,27
+202405,cocaine,24
+202405,other narcotics,22
+202405,inhalants/solvents,6
+202405,heroin,4
+202405,hallucinogens,1
+202405,other psychotropics,1
+202406,cannabis,68
+202406,alcohol,53
+202406,antidepressants,52
+202406,other opioids,41
+202406,synthetic narcotics,36
+202406,other narcotics,22
+202406,cocaine,20
+202406,psychostimulants,20
+202406,benzodiazepines,19
+202406,antipsychotics/neuroleptics,12
+202406,heroin,6
+202406,hallucinogens,4
+202406,inhalants/solvents,4
+202406,other psychodysleptics,3
+202406,methadone,1
+202407,cannabis,58
+202407,other opioids,46
+202407,alcohol,44
+202407,antidepressants,43
+202407,cocaine,28
+202407,benzodiazepines,27
+202407,antipsychotics/neuroleptics,25
+202407,synthetic narcotics,24
+202407,psychostimulants,22
+202407,other narcotics,20
+202407,heroin,9
+202407,inhalants/solvents,6
+202407,other psychodysleptics,2
+202407,barbiturates,1
+202407,methadone,1
+202408,antidepressants,66
+202408,cannabis,57
+202408,alcohol,55
+202408,other opioids,33
+202408,cocaine,27
+202408,antipsychotics/neuroleptics,26
+202408,benzodiazepines,25
+202408,synthetic narcotics,25
+202408,other narcotics,18
+202408,psychostimulants,13
+202408,inhalants/solvents,6
+202408,other psychodysleptics,5
+202408,heroin,2
+202409,alcohol,55
+202409,cannabis,49
+202409,antidepressants,47
+202409,other opioids,42
+202409,benzodiazepines,31
+202409,synthetic narcotics,26
+202409,antipsychotics/neuroleptics,21
+202409,other narcotics,20
+202409,cocaine,16
+202409,inhalants/solvents,10
+202409,psychostimulants,10
+202409,barbiturates,2
+202409,heroin,2
+202409,hallucinogens,1
+202409,methadone,1
+202409,other psychodysleptics,1
+202410,cannabis,66
+202410,antidepressants,59
+202410,alcohol,49
+202410,synthetic narcotics,43
+202410,antipsychotics/neuroleptics,32
+202410,other opioids,31
+202410,benzodiazepines,24
+202410,other narcotics,24
+202410,cocaine,14
+202410,psychostimulants,10
+202410,inhalants/solvents,8
+202410,heroin,6
+202410,other psychotropics,1
+202411,cannabis,47
+202411,other opioids,44
+202411,antidepressants,40
+202411,alcohol,36
+202411,antipsychotics/neuroleptics,28
+202411,cocaine,28
+202411,synthetic narcotics,23
+202411,benzodiazepines,22
+202411,other narcotics,15
+202411,psychostimulants,14
+202411,inhalants/solvents,5
+202411,heroin,2
+202411,hallucinogens,1
+202411,methadone,1
+202412,cannabis,62
+202412,other opioids,42
+202412,antidepressants,41
+202412,alcohol,38
+202412,synthetic narcotics,38
+202412,benzodiazepines,35
+202412,other narcotics,27
+202412,psychostimulants,22
+202412,antipsychotics/neuroleptics,19
+202412,cocaine,14
+202412,heroin,5
+202412,hallucinogens,2
+202412,inhalants/solvents,1
+202412,other psychodysleptics,1
+202501,cannabis,54
+202501,antidepressants,51
+202501,alcohol,44
+202501,synthetic narcotics,36
+202501,other opioids,35
+202501,benzodiazepines,34
+202501,antipsychotics/neuroleptics,32
+202501,cocaine,24
+202501,other narcotics,20
+202501,psychostimulants,10
+202501,inhalants/solvents,5
+202501,heroin,4
+202501,other psychodysleptics,4
+202501,other psychotropics,2
+202501,hallucinogens,1
+202501,methadone,1
+202502,cannabis,49
+202502,antidepressants,38
+202502,other opioids,31
+202502,alcohol,30
+202502,synthetic narcotics,28
+202502,cocaine,26
+202502,benzodiazepines,22
+202502,psychostimulants,20
+202502,antipsychotics/neuroleptics,19
+202502,other narcotics,12
+202502,heroin,5
+202502,inhalants/solvents,3
+202502,other psychodysleptics,3
+202502,opium,1
+202503,cannabis,50
+202503,antidepressants,49
+202503,other opioids,46
+202503,alcohol,45
+202503,cocaine,43
+202503,synthetic narcotics,42
+202503,antipsychotics/neuroleptics,31
+202503,benzodiazepines,22
+202503,other narcotics,16
+202503,psychostimulants,14
+202503,inhalants/solvents,5
+202503,heroin,4
+202503,hallucinogens,1
+202504,cannabis,72
+202504,antidepressants,51
+202504,other opioids,48
+202504,synthetic narcotics,42
+202504,alcohol,38
+202504,benzodiazepines,31
+202504,antipsychotics/neuroleptics,30
+202504,cocaine,29
+202504,other narcotics,22
+202504,psychostimulants,21
+202504,inhalants/solvents,11
+202504,heroin,7
+202504,hallucinogens,1
+202504,opium,1
+202504,other psychodysleptics,1
+202505,cannabis,79
+202505,other opioids,66
+202505,synthetic narcotics,64
+202505,alcohol,48
+202505,antidepressants,45
+202505,benzodiazepines,35
+202505,antipsychotics/neuroleptics,34
+202505,cocaine,24
+202505,other narcotics,21
+202505,psychostimulants,15
+202505,heroin,9
+202505,inhalants/solvents,4
+202505,methadone,3
+202505,other psychodysleptics,2
+202505,hallucinogens,1
+202505,opium,1
+202506,synthetic narcotics,70
+202506,cannabis,67
+202506,other opioids,57
+202506,alcohol,47
+202506,antidepressants,40
+202506,other narcotics,33
+202506,cocaine,32
+202506,antipsychotics/neuroleptics,31
+202506,benzodiazepines,31
+202506,psychostimulants,18
+202506,inhalants/solvents,7
+202506,heroin,4
+202506,methadone,3
+202506,other psychodysleptics,2
+202506,hallucinogens,1
+202507,antidepressants,70
+202507,cannabis,54
+202507,synthetic narcotics,54
+202507,other opioids,53
+202507,alcohol,49
+202507,benzodiazepines,37
+202507,antipsychotics/neuroleptics,28
+202507,other narcotics,28
+202507,cocaine,23
+202507,psychostimulants,15
+202507,inhalants/solvents,8
+202507,heroin,5
+202507,methadone,2
+202507,other psychodysleptics,2
+202507,barbiturates,1
+202507,hallucinogens,1
+202507,other psychotropics,1
+202508,synthetic narcotics,56
+202508,cannabis,54
+202508,antidepressants,51
+202508,antipsychotics/neuroleptics,41
+202508,other opioids,39
+202508,alcohol,33
+202508,benzodiazepines,20
+202508,other narcotics,19
+202508,cocaine,15
+202508,psychostimulants,13
+202508,inhalants/solvents,8
+202508,heroin,2
+202508,hallucinogens,1
+202508,methadone,1
+202509,cannabis,64
+202509,antidepressants,62
+202509,synthetic narcotics,55
+202509,alcohol,54
+202509,other opioids,47
+202509,psychostimulants,29
+202509,cocaine,28
+202509,antipsychotics/neuroleptics,27
+202509,benzodiazepines,27
+202509,other narcotics,20
+202509,inhalants/solvents,10
+202509,heroin,4
+202509,methadone,2
+202509,barbiturates,1
+202510,antidepressants,58
+202510,synthetic narcotics,40
+202510,cannabis,36
+202510,other opioids,29
+202510,antipsychotics/neuroleptics,27
+202510,benzodiazepines,25
+202510,alcohol,19
+202510,other narcotics,14
+202510,psychostimulants,13
+202510,inhalants/solvents,5
+202510,cocaine,2
+202510,heroin,2
+202510,methadone,1
