@@ -151,4 +151,119 @@ ggplot(substance_counts %>%
 ggsave("results/other_drug_trends.png",
     width = 12, height = 8)
 
-# aggregated groups
+# alcohol
+ggplot(substance_counts %>%
+    filter(substance == "alcohol"),
+    aes(x = month, y = n, color = substance)) +
+    geom_line(linewidth = 1.3) +
+    geom_point(size = 2) +
+    labs(title = "Alcohol-Related Encounters (DFW, 2023–2025)",
+         x = "Year",
+         y = "Count") +
+    scale_x_date(
+      date_breaks = "1 year",
+      date_labels = "%Y"
+    ) +
+    theme_stata() +
+    theme(
+      plot.title = element_text(size = 35, face = "bold"),
+      axis.title  = element_text(size = 25, face = "bold"),
+      axis.text   = element_text(size = 20),
+      plot.background = element_rect(fill = "white"),
+      legend.title = element_text(size = 18),
+      legend.text  = element_text(size = 16)
+    )
+ggsave("results/alcohol_trends.png",
+    width = 12, height = 8)
+
+# age distribution
+age_counts = dfwhc1 %>%
+    count(age_group) %>%
+    mutate(prop = n / sum(n))
+view(age_counts)
+write_csv(age_counts, "results/age_counts.csv")
+
+age_levels = c("0–17", "18–44", "45–64", "65–74", "75+", "Unknown")
+
+dfwhc1 = dfwhc1 %>%
+  mutate(
+    age_raw = str_remove_all(age_group, "\\*"),
+    age_clean = case_when(
+      str_detect(age_raw, "UNKNOWN") ~ "Unknown",
+
+      age_raw %in% c("1-28 Days", "29-365 Days", "1-4 Years",
+                     "5-9 Years", "10-14 Years", "15-17 Years") ~ "0–17",
+
+      age_raw == "0-17 Years"  ~ "0–17",
+      age_raw == "18-44 Years" ~ "18–44",
+      age_raw == "45-64 Years" ~ "45–64",
+      age_raw == "65-74 Years" ~ "65–74",
+      age_raw == "75+ Years"   ~ "75+",
+
+      age_raw %in% c("18-19 Years", "20-24 Years", "25-29 Years",
+                     "30-34 Years", "35-39 Years", "40-44 Years") ~ "18–44",
+      age_raw %in% c("45-49 Years", "50-54 Years", "55-59 Years", "60-64 Years") ~ "45–64",
+      age_raw %in% c("65-69 Years", "70-74 Years") ~ "65–74",
+      age_raw %in% c("75-79 Years", "80-84 Years", "85-89 Years", "90+ Years") ~ "75+",
+      TRUE ~ NA_character_),
+    age_clean = factor(age_clean, levels = age_levels)) %>%
+  select(-age_raw)
+
+ggplot(dfwhc1 %>%
+    filter(!is.na(age_clean)),
+    aes(x = age_clean)) +
+    geom_bar(fill = "royalblue2", color = "black") +
+    labs(title = "DFWHC Substance Use Encounters Age Distribution",
+         x = "Age group", y = "Count (in thousands)") +
+    scale_y_continuous(
+      labels = label_number(scale = 1e-3)) +
+    theme_stata() +
+    theme(
+      plot.title = element_text(size = 35, face = "bold"),
+      axis.title  = element_text(size = 25, face = "bold"),
+      axis.text   = element_text(size = 20),
+      axis.text.y = element_text(angle = 0),
+      axis.text.x = element_text(angle = 0),
+      plot.background = element_rect(fill = "white"))
+ggsave("results/age_groups.png",
+    width = 12, height = 8)
+
+# hospitals
+hospital_counts = dfwhc1 %>%
+ distinct(hospital, hosp_county) %>%
+ right_join(
+ dfwhc1 %>% count(hospital), 
+ by = "hospital") %>% arrange(desc(n))
+write_csv(hospital_counts, "results/hospital_counts.csv")
+
+# JPS Hospital substance counts
+jps_substances = dfwhc1 %>%
+    filter(hospital == "JPS Hosp") %>%
+    count(substance, sort = TRUE)
+
+jps_monthly = dfwhc1 %>%
+    mutate(month = as.Date(paste0(month_year, "01"), format = "%Y%m%d")) %>%
+    filter(hospital == "JPS Hosp") %>%
+    count(year, month, substance)
+
+ggplot(jps_monthly,
+       aes(x = month, y = n, color = substance)) +
+  geom_line(linewidth = 1.3) +
+  geom_point(size = 2) +
+  labs(title = "JPS Hospital: Substance-Related Encounters by Month (2023–2025)",
+       x = "Year",
+       y = "Count") +
+  scale_x_date(
+    date_breaks = "1 year",
+    date_labels = "%Y"
+  ) +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 30, face = "bold"),
+    axis.title  = element_text(size = 22, face = "bold"),
+    axis.text   = element_text(size = 18),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16),
+    legend.text  = element_text(size = 14)
+  )
+ggsave("results/jps_substances.png", width = 14, height = 9)
