@@ -5,7 +5,7 @@
 | `Prn_Diag_Desc` | Primary diagnosis (ICD-10) |
 | `D_Mnth_Yr` | Month and year of the encounter |
 | `D_Year` | Year |
-| `Hosp_Name_Short` | Hospital where treatment occurred|
+| `Hosp_Name_Short` | Hospital where treatment occurred |
 | `Hosp_County` | Hospital |
 | `Stat_Payer_Primary` | Primary payer for the encounter (e.g., Medicaid, Medicare, Commercial) |
 | `Stat_Payer_Group` | Broad payer category (e.g., Public, Private, Self-Pay) |
