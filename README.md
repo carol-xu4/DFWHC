@@ -2,6 +2,7 @@
 ## DATA: DFWHC Outpatient Analysis - Report Builder
 ### 01/26/2026 data pull: 
 #### Variables:
+|--------|-------------|
 | `Prn_Diag_Desc` | Primary diagnosis (ICD-10) |
 | `D_Mnth_Yr` | Month and year of the encounter |
 | `D_Year` | Year |
