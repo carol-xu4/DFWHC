@@ -529,3 +529,44 @@ ggsave("results/payer_by_hospital.png",
 county_counts = dfwhc1 %>% count(hosp_county, sort = TRUE)
 write_csv(county_counts, "results/county_counts.csv")
 
+payer_county_counts = dfwhc1 %>%
+    filter(hosp_county %in% c("Dallas", "Tarrant", "Collin")) %>%
+    count(hosp_county, payer_group) %>%
+    group_by(hosp_county) %>%
+    mutate(
+        prop = n / sum(n),
+        pct_label = paste0(round(prop*100, 1), "%")) %>%
+    ungroup()
+
+ggplot(payer_county_counts, aes(x = hosp_county, y = n, fill = payer_group)) +
+  geom_bar(stat = "identity", color = "white") +
+  geom_text(
+    aes(label = pct_label),
+    position = position_stack(vjust = 0.5),
+    color = "white", size = 6, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Insured" = "dodgerblue2",
+      "MC Advantage" = "magenta",
+      "Medicaid" = "paleturquoise4",
+      "Medicare" = "tomato",
+      "Uninsured" = "lightpink"),
+    name = "Payer type" ) +
+  labs(title = "Payer Type by County (DFW 2023-2025)",
+    subtitle = "Top 3 Counties only",
+    x = "County",
+    y = "Number of Encounters") +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 35, face = "bold"),
+    plot.subtitle = element_text(size = 22),
+    axis.title = element_text(size = 20),
+    axis.text = element_text(size = 16),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14))
+ggsave("results/payer_by_county.png",
+    width = 10, height = 12)
