@@ -523,4 +523,4 @@ ggplot(payer_hospital_counts, aes(x = hospital, y = n, fill = payer_group)) +
     legend.title = element_text(size = 16, face = "bold"),
     legend.text = element_text(size = 14))
 ggsave("results/payer_by_hospital.png",
-    width = 16, height = 14)
+    width = 14, height = 16)
