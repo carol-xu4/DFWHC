@@ -453,7 +453,7 @@ ggplot(payer_substance_counts, aes(x = substance_type, y = n, fill = payer_group
   geom_text(
     aes(label = pct_label),
     position = position_stack(vjust = 0.5),
-    color = "white", size = 8, fontface = "bold") +
+    color = "white", size = 6, fontface = "bold") +
   scale_fill_manual(
     values = c(
       "Insured" = "dodgerblue2",
