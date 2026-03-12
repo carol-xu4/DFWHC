@@ -428,3 +428,54 @@ ggplot(payers2025, aes(x = "", y = n, fill = payer_group)) +
   scale_y_continuous(expand = c(0, 0), labels = NULL, breaks = NULL)
 ggsave("results/payers2025.png",
     width = 12, height = 8)
+
+# payer by substance
+dfwhc1 = dfwhc1 %>%
+  mutate(substance_type = case_when(
+      substance %in% opioids ~ "Opioids",
+      substance %in% stimulants ~ "Stimulants",
+      substance %in% sedatives ~ "Sedatives",
+      substance %in% other_drugs ~ "Other drugs",
+      substance == "alcohol" ~ "Alcohol",
+      TRUE ~ NA_character_))
+
+payer_substance_counts = dfwhc1 %>%
+  filter(!is.na(substance_type)) %>%
+  count(substance_type, payer_group) %>%
+  group_by(substance_type) %>%
+  mutate(
+    prop = n / sum(n),
+    pct_label = paste0(round(prop * 100, 1), "%")) %>%
+  ungroup()
+
+ggplot(payer_substance_counts, aes(x = substance_type, y = n, fill = payer_group)) +
+  geom_bar(stat = "identity", color = "white") +
+  geom_text(
+    aes(label = pct_label),
+    position = position_stack(vjust = 0.5),
+    color = "white", size = 8, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Insured" = "dodgerblue2",
+      "MC Advantage" = "magenta",
+      "Medicaid" = "paleturquoise4",
+      "Medicare" = "tomato",
+      "Uninsured" = "lightpink"),
+    name = "Payer type" ) +
+  labs(
+    title = "Payer Type by Substance Category (DFW 2023-2025)",
+    x = "Substance Category",
+    y = "Number of Encounters") +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 35, face = "bold"),
+    axis.title = element_text(size = 20),
+    axis.text = element_text(size = 16),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14))
+ggsave("results/payer_by_substance_category.png",
+    width = 14, height = 15) 
