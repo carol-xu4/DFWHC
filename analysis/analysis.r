@@ -524,3 +524,8 @@ ggplot(payer_hospital_counts, aes(x = hospital, y = n, fill = payer_group)) +
     legend.text = element_text(size = 14))
 ggsave("results/payer_by_hospital.png",
     width = 14, height = 16)
+
+# payer by county
+county_counts = dfwhc1 %>% count(hosp_county, sort = TRUE)
+write_csv(county_counts, "results/county_counts.csv")
+
