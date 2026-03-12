@@ -513,6 +513,7 @@ ggplot(payer_hospital_counts, aes(x = hospital, y = n, fill = payer_group)) +
   theme_stata() +
   theme(
     plot.title = element_text(size = 35, face = "bold"),
+    plot.subtitle = element_text(size = 22),
     axis.title = element_text(size = 20),
     axis.text = element_text(size = 16),
     axis.ticks = element_blank(),
