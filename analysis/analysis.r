@@ -244,7 +244,8 @@ write_csv(jps_substances, "results/jps_substances")
 
 jps_substances_year = dfwhc1 %>%
     filter(hospital == "JPS Hosp") %>%
-    count(substance, year, sort = TRUE) 
+    count(substance, year, sort = TRUE) %>%
+    arrange(substance, year)
 write_csv(jps_substances_year, "results/jps_substances_year")
 
 jps_monthly = dfwhc1 %>%
