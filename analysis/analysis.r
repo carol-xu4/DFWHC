@@ -240,13 +240,13 @@ write_csv(hospital_counts, "results/hospital_counts.csv")
 jps_substances = dfwhc1 %>%
     filter(hospital == "JPS Hosp") %>%
     count(substance, sort = TRUE) 
-write_csv(jps_substances, "results/jps_substances")
+write_csv(jps_substances, "results/jps_substances.csv")
 
 jps_substances_year = dfwhc1 %>%
     filter(hospital == "JPS Hosp") %>%
     count(substance, year, sort = TRUE) %>%
     arrange(substance, year)
-write_csv(jps_substances_year, "results/jps_substances_year")
+write_csv(jps_substances_year, "results/jps_substances_year.csv")
 
 jps_monthly = dfwhc1 %>%
     mutate(month = as.Date(paste0(month_year, "01"), format = "%Y%m%d")) %>%

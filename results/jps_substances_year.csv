@@ -1,0 +1,43 @@
+substance,year,n
+alcohol,2023,295
+alcohol,2024,314
+alcohol,2025,222
+antidepressants,2023,52
+antidepressants,2024,76
+antidepressants,2025,29
+antipsychotics/neuroleptics,2023,36
+antipsychotics/neuroleptics,2024,43
+antipsychotics/neuroleptics,2025,31
+benzodiazepines,2023,32
+benzodiazepines,2024,33
+benzodiazepines,2025,19
+cannabis,2023,23
+cannabis,2024,26
+cannabis,2025,33
+cocaine,2023,175
+cocaine,2024,157
+cocaine,2025,155
+hallucinogens,2024,3
+heroin,2023,25
+heroin,2024,5
+heroin,2025,8
+inhalants/solvents,2023,2
+inhalants/solvents,2024,4
+methadone,2024,1
+methadone,2025,1
+other narcotics,2023,40
+other narcotics,2024,32
+other narcotics,2025,57
+other opioids,2023,90
+other opioids,2024,79
+other opioids,2025,89
+other psychodysleptics,2023,2
+other psychodysleptics,2024,1
+other psychotropics,2023,2
+other psychotropics,2025,1
+psychostimulants,2023,16
+psychostimulants,2024,17
+psychostimulants,2025,10
+synthetic narcotics,2023,33
+synthetic narcotics,2024,44
+synthetic narcotics,2025,96
