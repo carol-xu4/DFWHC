@@ -479,3 +479,47 @@ ggplot(payer_substance_counts, aes(x = substance_type, y = n, fill = payer_group
     legend.text = element_text(size = 14))
 ggsave("results/payer_by_substance_category.png",
     width = 14, height = 15) 
+
+# Payer types by hospital (top 5 only)
+payer_hospital_counts = dfwhc1 %>%
+    filter(hospital %in% c("JPS Hosp", "PHS Parkland", "Cook Hospital", "BSW University", "MC Dallas")) %>%
+    count(hospital, payer_group) %>%
+    group_by(hospital) %>%
+    mutate(
+        prop = n / sum(n),
+        pct_label = paste0(round(prop*100, 1), "%")
+    ) %>%
+    ungroup()
+
+ggplot(payer_hospital_counts, aes(x = hospital, y = n, fill = payer_group)) +
+  geom_bar(stat = "identity", color = "white") +
+  geom_text(
+    aes(label = pct_label),
+    position = position_stack(vjust = 0.5),
+    color = "white", size = 6, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Insured" = "dodgerblue2",
+      "MC Advantage" = "magenta",
+      "Medicaid" = "paleturquoise4",
+      "Medicare" = "tomato",
+      "Uninsured" = "lightpink"),
+    name = "Payer type" ) +
+  labs(
+    title = "Payer Type by Hospital (DFW, 2023-2025)",
+    subtitle = "Top 5 Substance Use Encounter Hospitals Only",
+    x = "Hospital",
+    y = "Number of Encounters") +
+  theme_stata() +
+  theme(
+    plot.title = element_text(size = 35, face = "bold"),
+    axis.title = element_text(size = 20),
+    axis.text = element_text(size = 16),
+    axis.ticks = element_blank(),
+    axis.line = element_blank(),
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "white"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14))
+ggsave("results/payer_by_hospital.png",
+    width = 16, height = 14)
